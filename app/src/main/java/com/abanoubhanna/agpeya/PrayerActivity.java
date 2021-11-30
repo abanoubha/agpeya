@@ -2,13 +2,11 @@ package com.abanoubhanna.agpeya;
 
 import android.app.Activity;
 import android.app.ProgressDialog;
-import android.content.SharedPreferences;
 import android.database.Cursor;
 import android.graphics.Color;
 import android.graphics.Typeface;
 import android.os.AsyncTask;
 import android.os.Bundle;
-import android.preference.PreferenceManager;
 import android.widget.LinearLayout;
 import android.widget.ScrollView;
 import android.widget.TextView;
@@ -28,15 +26,14 @@ public class PrayerActivity extends Activity {
     public ProgressDialog Progress;
     private int bgColor;
     /* access modifiers changed from: private */
-    public int contentColor;
+    public int contentColor = -16777216;
     /* access modifiers changed from: private */
-    public int contentSize;
+    public int contentSize = 18;
     /* access modifiers changed from: private */
     public int currentScreen = -1;
     private String currentKey = "currentScreen";
     /* access modifiers changed from: private */
     public Typeface droid;
-    private boolean keepScreenOn;
     /* access modifiers changed from: private */
     public int parentId;
     public Cursor pray;
@@ -44,11 +41,10 @@ public class PrayerActivity extends Activity {
     public String prayerHeaderText;
     /* access modifiers changed from: private */
     public DragableSpace space;
-    private boolean supportArabic;
     /* access modifiers changed from: private */
     public int titleColor;
     /* access modifiers changed from: private */
-    public int titleSize;
+    public int titleSize = 20;
     public List<String> titles;
 
     /* access modifiers changed from: protected */
@@ -58,16 +54,15 @@ public class PrayerActivity extends Activity {
         setContentView(R.layout.please_wait);
         this.space = new DragableSpace(getApplicationContext());
         this.droid = Typeface.createFromAsset(getAssets(), "DroidNaskh-Bold.ttf");
-        SharedPreferences Preferences = PreferenceManager.getDefaultSharedPreferences(this);
-        this.titleSize = Preferences.getInt("titleSize", 20);
-        this.contentSize = Preferences.getInt("contentSize", 18);
-        this.titleColor = Preferences.getInt("titleColor", Color.parseColor("#87410d"));
-        this.contentColor = Preferences.getInt("contentColor", -16777216);
-        this.bgColor = Preferences.getInt("bgColor", Color.parseColor("#fefde9"));
-        this.keepScreenOn = Preferences.getBoolean("keepScreenon", true);
-        this.supportArabic = Preferences.getBoolean("supportArabic", false);
+
+        //this.titleSize = 20;
+        //this.contentSize = 18;
+        this.titleColor = Color.parseColor("#87410d");
+        //this.contentColor = -16777216;
+        this.bgColor = Color.parseColor("#fefde9");
+
         this.space.setBackgroundColor(this.bgColor);
-        this.space.setKeepScreenOn(this.keepScreenOn);
+        this.space.setKeepScreenOn(true);
         this.titles = new ArrayList();
         Bundle extras = getIntent().getExtras();
         this.f2Id = extras != null ? extras.getInt("Id") : -1;
