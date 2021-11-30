@@ -32,7 +32,7 @@ public class PrayerActivity extends Activity {
     /* access modifiers changed from: private */
     public int contentSize;
     /* access modifiers changed from: private */
-    public int cureentScreen = -1;
+    public int currentScreen = -1;
     private String currentKey = "currentScreen";
     /* access modifiers changed from: private */
     public Typeface droid;
@@ -166,8 +166,8 @@ public class PrayerActivity extends Activity {
             super.onPostExecute(result);
             PrayerActivity.this.setTitle(PrayerActivity.this.prayerHeaderText);
             int childsTotal = PrayerActivity.this.space.getChildCount() - 1;
-            if (PrayerActivity.this.cureentScreen != -1) {
-                toScreen = PrayerActivity.this.cureentScreen;
+            if (PrayerActivity.this.currentScreen != -1) {
+                toScreen = PrayerActivity.this.currentScreen;
             } else {
                 toScreen = childsTotal;
             }
@@ -222,7 +222,7 @@ public class PrayerActivity extends Activity {
     public void onRestoreInstanceState(Bundle savedInstanceState) {
         super.onRestoreInstanceState(savedInstanceState);
         if (savedInstanceState.containsKey(this.currentKey)) {
-            this.cureentScreen = savedInstanceState.getInt(this.currentKey);
+            this.currentScreen = savedInstanceState.getInt(this.currentKey);
         }
     }
 
