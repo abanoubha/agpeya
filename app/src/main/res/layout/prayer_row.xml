@@ -1,2 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
-<TextView xmlns:android="http://schemas.android.com/apk/res/android" android:textSize="16sp" android:textColor="#87410d" android:gravity="start" android:textAlignment="textStart" android:id="@+id/prayer" android:padding="10dp" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+<TextView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/prayer"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="start"
+    android:padding="10dp"
+    android:textAlignment="textStart"
+    android:textColor="#87410d"
+    android:textSize="16sp" />
