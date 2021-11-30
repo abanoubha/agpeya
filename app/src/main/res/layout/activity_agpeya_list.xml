@@ -1,5 +1,28 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:id="@+id/prayer_list" android:background="@drawable/select_prayer_bg" android:layout_width="match_parent" android:layout_height="match_parent">
-    <ImageView android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5dp" android:src="@drawable/title" android:contentDescription="@string/app_name"/>
-    <ExpandableListView android:textColor="#60240a" android:id="@+id/expandableList" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="10dp" android:listSelector="@android:color/transparent" android:cacheColorHint="@android:color/transparent" android:childDivider="@drawable/line_divider" android:divider="@drawable/line_divider" android:dividerHeight="3dp"/>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/prayer_list"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/select_prayer_bg"
+    android:orientation="vertical">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="5dp"
+        android:contentDescription="@string/app_name"
+        android:src="@drawable/title" />
+
+    <ExpandableListView
+        android:id="@+id/expandableList"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:cacheColorHint="@android:color/transparent"
+        android:childDivider="@drawable/line_divider"
+        android:divider="@drawable/line_divider"
+        android:dividerHeight="3dp"
+        android:listSelector="@android:color/transparent"
+        android:textColor="#60240a" />
 </LinearLayout>
