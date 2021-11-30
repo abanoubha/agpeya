@@ -1,4 +1,4 @@
-package com.abanoubhanna.agpeya;
+package com.softwarepharaoh.agpeya;
 
 import android.content.Context;
 
@@ -22,6 +22,6 @@ public class ExampleInstrumentedTest {
         // Context of the app under test.
         Context appContext = InstrumentationRegistry.getInstrumentation().getTargetContext();
 
-        assertEquals("com.abanoubhanna.agpeya", appContext.getPackageName());
+        assertEquals("com.softwarepharaoh.agpeya", appContext.getPackageName());
     }
 }

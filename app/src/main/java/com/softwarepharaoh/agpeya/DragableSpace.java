@@ -1,4 +1,4 @@
-package com.abanoubhanna.agpeya;
+package com.softwarepharaoh.agpeya;
 
 import android.content.Context;
 import android.os.Parcel;

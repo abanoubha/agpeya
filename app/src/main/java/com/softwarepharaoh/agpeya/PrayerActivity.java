@@ -1,4 +1,4 @@
-package com.abanoubhanna.agpeya;
+package com.softwarepharaoh.agpeya;
 
 import android.app.Activity;
 import android.app.ProgressDialog;
@@ -57,8 +57,8 @@ public class PrayerActivity extends Activity {
 
         //this.titleSize = 20;
         //this.contentSize = 18;
-        this.titleColor = Color.parseColor("#87410d");
         //this.contentColor = -16777216;
+        this.titleColor = Color.parseColor("#87410d");
         this.bgColor = Color.parseColor("#fefde9");
 
         this.space.setBackgroundColor(this.bgColor);

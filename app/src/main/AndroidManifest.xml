@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.abanoubhanna.agpeya">
+    package="softwarepharaoh.agpeya">
 
     <application
         android:allowBackup="false"
@@ -10,9 +10,9 @@
         android:supportsRtl="false"
         android:theme="@style/AppTheme"
         >
-        <activity android:name=".PrayerActivity"/>
-        <activity android:name=".AgpeyaListActivity" />
-        <activity android:name=".SplashActivity">
+        <activity android:name="com.softwarepharaoh.agpeya.PrayerActivity"/>
+        <activity android:name="com.softwarepharaoh.agpeya.AgpeyaListActivity" />
+        <activity android:name="com.softwarepharaoh.agpeya.SplashActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
