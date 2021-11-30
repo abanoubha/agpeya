@@ -1,0 +1,71 @@
+<resources>
+    <string name="app_name">الأجبية</string>
+    <string name="about_title">الأجبية</string>
+    <string name="hours_prayers">صلوات السواعي</string>
+    <string name="midnight_prayers">صلاة نصف الليل</string>
+    <string name="other_prayers">صلوات آخرى</string>
+    <string name="select_prayer">أختر صلاة</string>
+    <string name="about_agpeya">كلمة اجبية هي كلمة قبطية تعني كتاب السواعي أو كتاب الساعات. وهي كلمه ذات أصل قبطي مبنية على كلمة تي أجب التي تعني ساعات.\10\10تستخدم الأجبية في الأساس عن طريق الكنيسة القبطية الأرثوذكسية. وهي تحتوي على سبع صلوات تُقال على مدار اليوم. وقد تم ترتيب ساعات الصلوات زمنياً، وكل منها فكرته عبارة عن جزء من حياة السيد المسيح على الأرض.</string>
+    <string name="developed">برمجة وتطوير:</string>
+    <string name="developper">أبانوب حنا</string>
+    <string name="feedback">للإقتراحات او المشاكل</string>
+    <string name="email">اضغط هنا لمراسلتي</string>
+    <string name="wait">Please wait…</string>
+    <string name="splash">splash</string>
+    <string name="options">Options</string>
+    <string name="prayer_options">Prayer Display Options</string>
+    <string name="about">About</string>
+    <string name="gotolist">Go To</string>
+    <string name="selectPrayer">Choose Prayer</string>
+    <string name="lords_prayer_db">بسم الآب والإبن والروح القدس الإله الواحد آمين</string>
+    <string name="lords_prayer">الصلاة الربانية</string>
+    <string name="prayer_start">بدء الصلاة</string>
+    <string name="dialog_title_size">Titles Size</string>
+    <string name="dialog_context_size">Text Size</string>
+    <string name="dialog_summary">current size: %1$d</string>
+    <string name="keep_screen_on">Keep Screen On</string>
+    <string name="keep_screen_summary">Keep Screen on While Displaying Prayer</string>
+    <string name="support_arabic">Support Arabic</string>
+    <string name="support_arabic_summary">Fix Arabic letters on non-arabic devices</string>
+    <string name="title_color">Titles Color</string>
+    <string name="content_color">Text Color</string>
+    <string name="bg_color">Background Color</string>
+    <string name="default_title">Default settings</string>
+    <string name="title_color_summary">Change title color of Prayer</string>
+    <string name="content_color_summary">Change text color of Prayer</string>
+    <string name="bg_color_summary">Change the background color of prayer</string>
+    <string name="default_summary">Restore all Settings to the default mode</string>
+    <string name="preferneces_saved">All Setting Saved…</string>
+    <string name="reset_question">All Default Setting will be Restored ?</string>
+    <string name="reset_replay">All Default Setting Restored</string>
+    <string name="reset_yes">Yes</string>
+    <string name="reset_no">No</string>
+    <string name="dialog_color_picker">Choose color</string>
+    <string name="press_color_to_apply">Press color to apply</string>
+    <array name="prayers_array">
+        <item>صلاة باكر</item>
+        <item>صلاة الساعة الثالثة</item>
+        <item>صلاة الساعة السادسة</item>
+        <item>صلاة الساعة التاسعة</item>
+        <item>صلاة الغروب</item>
+        <item>صلاة النوم</item>
+        <item>صلاة الستار</item>
+    </array>
+    <array name="midnight_prayers_array">
+        <item>الخدمة الأولى</item>
+        <item>الخدمة الثانية</item>
+        <item>الخدمة الثالثة</item>
+    </array>
+    <array name="other_prayers_array">
+        <item>صلاة للتوبة</item>
+        <item>صلاة قبل الأعتراف</item>
+        <item>صلاة بعد الأعتراف</item>
+        <item>صلاة قبل التناول</item>
+        <item>صلاة بعد التناول</item>
+        <item>صلاة قبل الاكل</item>
+        <item>صلاة بعد الاكل</item>
+        <item>طلب المشورة قبل الشروع في عمل</item>
+        <item>طلبة من الأبصلمودية السنوية</item>
+        <item>صلاه قبل الامتحان</item>
+    </array>
+</resources>
