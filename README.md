@@ -1,7 +1,7 @@
 # agpeya
  Agpeya: Prayer Book of Hours. This app is inspired by [Agpeya by Armia](https://play.google.com/store/apps/details?id=com.coptsonline.agpeya).
  
- Download Agpeya app from [Google Play](https://play.google.com/store/apps/details?id=com.softwarepharaoh.agpeya) or Samsung Galaxy Store or Huawei AppGallery.
+ Download Agpeya app from [Google Play](https://play.google.com/store/apps/details?id=com.softwarepharaoh.agpeya) or [Samsung Galaxy Store](https://galaxy.store/agpeya) or [Huawei AppGallery](https://appgallery.cloud.huawei.com/ag/n/app/C105039643?channelId=agpeya&id=8c4974399ed54f9c820e5b5a6fbce4a8&s=2F8958B2459A92B4D6694B856BE386F8C719CCBBB64C2F2AD638E53CAA3C9E98&detailType=0&v=&callType=AGDLINK&installType=0000).
  
  # Features
  - easy to use and navigate
