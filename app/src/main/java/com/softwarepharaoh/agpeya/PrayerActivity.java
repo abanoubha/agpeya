@@ -141,8 +141,7 @@ public class PrayerActivity extends Activity {
             return description.replaceAll("\\\\n", "\\\n");
         }
 
-        /* access modifiers changed from: protected */
-        public void onPostExecute(String result) {
+        protected void onPostExecute(String result) {
             int toScreen;
             super.onPostExecute(result);
             PrayerActivity.this.setTitle(PrayerActivity.this.prayerHeaderText);
