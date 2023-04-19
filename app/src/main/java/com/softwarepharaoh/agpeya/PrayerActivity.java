@@ -18,37 +18,23 @@ public class PrayerActivity extends Activity {
     public static final String[] MIDNIGHT_PRAYERS = {"Midnight_1", "Midnight_2", "Midnight_3"};
     public static final String[] OTHER_PRAYERS = {"contrition", "before_confession", "after_confession", "before_communion", "after_communion", "before_eating", "after_eating", "consultation", "yearly", "before_exam"};
     public static final String[] PRAYERS = {"Prime", "Terce", "Sext", "None", "Vespers", "Compline", "Viel"};
-    /* access modifiers changed from: private */
 
-    /* renamed from: Id */
-    public int f2Id;
-    /* access modifiers changed from: private */
+    private int f2Id;
     public ProgressDialog Progress;
-    private int bgColor;
-    /* access modifiers changed from: private */
-    public int contentColor = -16777216;
-    /* access modifiers changed from: private */
-    public int contentSize = 18;
-    /* access modifiers changed from: private */
+    private final int contentColor = -16777216;
+    private final int contentSize = 18;
     public int currentScreen = -1;
-    private String currentKey = "currentScreen";
-    /* access modifiers changed from: private */
+    private final String currentKey = "currentScreen";
     public Typeface droid;
-    /* access modifiers changed from: private */
-    public int parentId;
+    private int parentId;
     public Cursor pray;
-    /* access modifiers changed from: private */
-    public String prayerHeaderText;
-    /* access modifiers changed from: private */
-    public DragableSpace space;
-    /* access modifiers changed from: private */
-    public int titleColor;
-    /* access modifiers changed from: private */
-    public int titleSize = 20;
+    private String prayerHeaderText;
+    private DragableSpace space;
+    private int titleColor;
+    private final int titleSize = 20;
     public List<String> titles;
 
-    /* access modifiers changed from: protected */
-    public void onCreate(Bundle savedInstanceState) {
+    protected void onCreate(Bundle savedInstanceState) {
         int i;
         super.onCreate(savedInstanceState);
         setContentView(R.layout.please_wait);
@@ -59,9 +45,9 @@ public class PrayerActivity extends Activity {
         //this.contentSize = 18;
         //this.contentColor = -16777216;
         this.titleColor = Color.parseColor("#87410d");
-        this.bgColor = Color.parseColor("#fefde9");
+        int bgColor = Color.parseColor("#fefde9");
 
-        this.space.setBackgroundColor(this.bgColor);
+        this.space.setBackgroundColor(bgColor);
         this.space.setKeepScreenOn(true);
         this.titles = new ArrayList();
         Bundle extras = getIntent().getExtras();
@@ -82,8 +68,7 @@ public class PrayerActivity extends Activity {
         public loadPrayer() {
         }
 
-        /* access modifiers changed from: protected */
-        public String doInBackground(String... params) {
+        protected String doInBackground(String... params) {
             String SelectIn = getSelectin();
             AgpeyaDB db = new AgpeyaDB(PrayerActivity.this);
             db.open();
@@ -128,6 +113,7 @@ public class PrayerActivity extends Activity {
                     PrayerActivity.this.pray.moveToPrevious();
                 }
             }
+            assert PrayerActivity.this.pray != null;
             PrayerActivity.this.pray.close();
             db.close();
             return null;
@@ -205,24 +191,21 @@ public class PrayerActivity extends Activity {
 //        return super.onContextItemSelected(item);
 //    }
 
-    /* access modifiers changed from: protected */
-    public void onSaveInstanceState(Bundle icicle) {
+    protected void onSaveInstanceState(Bundle icicle) {
         if (this.space.getCurrentScreen() != 0) {
             icicle.putInt(this.currentKey, this.space.getCurrentScreen());
         }
         super.onSaveInstanceState(icicle);
     }
 
-    /* access modifiers changed from: protected */
-    public void onRestoreInstanceState(Bundle savedInstanceState) {
+    protected void onRestoreInstanceState(Bundle savedInstanceState) {
         super.onRestoreInstanceState(savedInstanceState);
         if (savedInstanceState.containsKey(this.currentKey)) {
             this.currentScreen = savedInstanceState.getInt(this.currentKey);
         }
     }
 
-    /* access modifiers changed from: protected */
-    public void onPause() {
+    protected void onPause() {
         super.onPause();
         this.Progress.dismiss();
     }
