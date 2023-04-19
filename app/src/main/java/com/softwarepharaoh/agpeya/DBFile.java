@@ -9,7 +9,7 @@ import java.io.IOException;
 import java.io.InputStream;
 
 public class DBFile {
-    private static String DB_NAME = "agpeya";
+    private static final String DB_NAME = "agpeya";
     private final Context myContext;
 
     public DBFile(Context context) {
