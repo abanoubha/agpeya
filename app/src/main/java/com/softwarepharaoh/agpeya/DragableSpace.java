@@ -12,21 +12,20 @@ import android.widget.Scroller;
 
 public class DragableSpace extends ViewGroup {
     private static final int SNAP_VELOCITY = 300;
-    private static final int TOUCH_STATE_REST = 0;
-    private static final int TOUCH_STATE_SCROLLING = 1;
-    private int allowedDistance = 50;
+    // private static final int TOUCH_STATE_REST = 0;
+    // private static final int TOUCH_STATE_SCROLLING = 1;
     private float lastMotionY;
     private int mCurrentScreen = 0;
     private float mLastMotionX;
     private int mScrollX = 0;
-    private Scroller mScroller;
+    private final Scroller mScroller;
     private int mTouchSlop = 0;
     private int mTouchState = 0;
     private VelocityTracker mVelocityTracker;
 
-    public interface onViewChangedEvent {
-        void onViewChange(int i);
-    }
+//    public interface onViewChangedEvent {
+//        void onViewChange(int i);
+//    }
 
     public DragableSpace(Context context) {
         super(context);
@@ -44,6 +43,7 @@ public class DragableSpace extends ViewGroup {
         }
         float x = ev.getX();
         float y = ev.getY();
+        int allowedDistance = 50;
         switch (action) {
             case 0:
                 this.mLastMotionX = x;
@@ -56,7 +56,7 @@ public class DragableSpace extends ViewGroup {
                 break;
             case 2:
                 int xDiff = (int) Math.abs(x - this.mLastMotionX);
-                if (((int) Math.abs(y - this.lastMotionY)) < this.allowedDistance) {
+                if (((int) Math.abs(y - this.lastMotionY)) < allowedDistance) {
                     yMoved = true;
                 } else {
                     yMoved = false;
@@ -142,19 +142,19 @@ public class DragableSpace extends ViewGroup {
         invalidate();
     }
 
-    public void setToScreen(int whichScreen) {
-        this.mCurrentScreen = whichScreen;
-        this.mScroller.startScroll(this.mScrollX, 0, (whichScreen * getWidth()) - this.mScrollX, 0, 1);
-        invalidate();
-    }
+//    public void setToScreen(int whichScreen) {
+//        this.mCurrentScreen = whichScreen;
+//        this.mScroller.startScroll(this.mScrollX, 0, (whichScreen * getWidth()) - this.mScrollX, 0, 1);
+//        invalidate();
+//    }
 
-    /* access modifiers changed from: protected */
-    public void onLayout(boolean changed, int l, int t, int r, int b) {
+    protected void onLayout(boolean changed, int l, int t, int r, int b) {
         int childLeft = 0;
         int count = getChildCount();
         for (int i = 0; i < count; i++) {
             View child = getChildAt(i);
-            if (child.getVisibility() != 8) {
+            // if (child.getVisibility() != 8) {
+            if (child.getVisibility() != View.GONE) {
                 int childWidth = child.getMeasuredWidth();
                 child.layout(childLeft, 0, childLeft + childWidth, child.getMeasuredHeight());
                 childLeft += childWidth;
@@ -162,13 +162,14 @@ public class DragableSpace extends ViewGroup {
         }
     }
 
-    /* access modifiers changed from: protected */
-    public void onMeasure(int widthMeasureSpec, int heightMeasureSpec) {
+    protected void onMeasure(int widthMeasureSpec, int heightMeasureSpec) {
         super.onMeasure(widthMeasureSpec, heightMeasureSpec);
         int width = View.MeasureSpec.getSize(widthMeasureSpec);
-        if (View.MeasureSpec.getMode(widthMeasureSpec) != 1073741824) {
+        // if (View.MeasureSpec.getMode(widthMeasureSpec) != 1073741824) {
+        if (MeasureSpec.getMode(widthMeasureSpec) != MeasureSpec.EXACTLY) {
             throw new IllegalStateException("error mode.");
-        } else if (View.MeasureSpec.getMode(heightMeasureSpec) != 1073741824) {
+        //} else if (MeasureSpec.getMode(heightMeasureSpec) != 1073741824) {
+        } else if (MeasureSpec.getMode(heightMeasureSpec) != MeasureSpec.EXACTLY) {
             throw new IllegalStateException("error mode.");
         } else {
             int count = getChildCount();
@@ -187,15 +188,13 @@ public class DragableSpace extends ViewGroup {
         }
     }
 
-    /* access modifiers changed from: protected */
-    public Parcelable onSaveInstanceState() {
+    protected Parcelable onSaveInstanceState() {
         SavedState state = new SavedState(super.onSaveInstanceState());
         state.currentScreen = this.mCurrentScreen;
         return state;
     }
 
-    /* access modifiers changed from: protected */
-    public void onRestoreInstanceState(Parcelable state) {
+    protected void onRestoreInstanceState(Parcelable state) {
         SavedState savedState = (SavedState) state;
         super.onRestoreInstanceState(savedState.getSuperState());
         if (savedState.currentScreen != -1) {
