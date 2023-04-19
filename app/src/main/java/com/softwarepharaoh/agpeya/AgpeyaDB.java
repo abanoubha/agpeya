@@ -9,7 +9,7 @@ import java.io.IOException;
 
 public class AgpeyaDB {
     private static final String DATABASE_NAME = "agpeya";
-    private static final int DATABASE_VERSION = 1;
+    // private static final int DATABASE_VERSION = 1;
     private final Context AgpeyaContext;
     private SQLiteDatabase AgpeyaDataBase;
     private DBHelper AgpeyaHelper;
@@ -53,18 +53,17 @@ public class AgpeyaDB {
         return this.cursor;
     }
 
-    public Cursor getAllRemiders() {
-        try {
-            this.cursor = this.AgpeyaDataBase.query("prayers_reminder", new String[]{"prayer", "prayer_time", "is_active"}, null, null, null, null, null);
-        } catch (Exception e) {
-            e.printStackTrace();
-        }
-        return this.cursor;
-    }
+//    public Cursor getAllRemiders() {
+//        try {
+//            this.cursor = this.AgpeyaDataBase.query("prayers_reminder", new String[]{"prayer", "prayer_time", "is_active"}, null, null, null, null, null);
+//        } catch (Exception e) {
+//            e.printStackTrace();
+//        }
+//        return this.cursor;
+//    }
 
     public void close() {
         this.AgpeyaDataBase.close();
         this.AgpeyaHelper.close();
     }
 }
-
