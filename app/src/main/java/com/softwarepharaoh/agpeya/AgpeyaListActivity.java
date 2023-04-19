@@ -21,8 +21,8 @@ public class AgpeyaListActivity extends AppCompatActivity {
     private ExpandableListView expandableList;
 
     public class ListAdapter extends BaseExpandableListAdapter {
-        private String[][] children;
-        private String[] groups;
+        private final String[][] children;
+        private final String[] groups;
 
         public ListAdapter() {
             this.groups = new String[]{AgpeyaListActivity.this.getResources().getString(R.string.hours_prayers), AgpeyaListActivity.this.getResources().getString(R.string.midnight_prayers), AgpeyaListActivity.this.getResources().getString(R.string.other_prayers)};
@@ -41,12 +41,12 @@ public class AgpeyaListActivity extends AppCompatActivity {
             return this.children[groupPosition].length;
         }
 
-        public TextView getGenericView() {
-            LayoutParams lp = new LayoutParams(-2, 64);
-            TextView textView = new TextView(AgpeyaListActivity.this);
-            textView.setLayoutParams(lp);
-            return textView;
-        }
+//        public TextView getGenericView() {
+//            LayoutParams lp = new LayoutParams(-2, 64);
+//            TextView textView = new TextView(AgpeyaListActivity.this);
+//            textView.setLayoutParams(lp);
+//            return textView;
+//        }
 
         public View getChildView(int groupPosition, int childPosition, boolean isLastChild, View convertView, ViewGroup parent) {
             TextView textView = (TextView) ((LayoutInflater) AgpeyaListActivity.this.getSystemService(LAYOUT_INFLATER_SERVICE)).inflate(R.layout.prayer_row, null).findViewById(R.id.prayer);
