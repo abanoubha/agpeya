@@ -19,6 +19,7 @@
 - [ ] preferences : text/font size
 - [ ] preferences : text/font color
 - [ ] feature : go to 'page x' directly inside a prayer
+- [ ] reader : listen to a prayer (accessibility option)
 - [ ] dark mode
 - [ ] notification of the prayer : choose time or default time
 
