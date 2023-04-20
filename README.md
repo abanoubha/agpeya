@@ -16,6 +16,9 @@
 - [x] support Android 11
 - [x] support Android 12
 - [x] support latest Android SDK (33) : v1.1.0
+- [ ] preferences : text/font size
+- [ ] preferences : text/font color
+- [ ] feature : go to 'page x' directly inside a prayer
 - [ ] dark mode
 - [ ] notification of the prayer : choose time or default time
 
