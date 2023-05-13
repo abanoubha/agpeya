@@ -1,0 +1,2 @@
+- more memory efficient
+- Available for devices with Android 5.1 up to latest Android
