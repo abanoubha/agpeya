@@ -18,7 +18,7 @@ public class PrayerActivity extends Activity {
     public static final String[] OTHER_PRAYERS = {"contrition", "before_confession", "after_confession", "before_communion", "after_communion", "before_eating", "after_eating", "consultation", "yearly", "before_exam"};
     public static final String[] PRAYERS = {"Prime", "Terce", "Sext", "None", "Vespers", "Compline", "Viel"};
 
-    private int f2Id;
+    private int prayerNumber;
     public ProgressDialog Progress;
     private final int contentColor = -16777216;
     private final int contentSize = 18;
@@ -48,14 +48,14 @@ public class PrayerActivity extends Activity {
         this.space.setKeepScreenOn(true);
         this.titles = new ArrayList();
         Bundle extras = getIntent().getExtras();
-        this.f2Id = extras != null ? extras.getInt("Id") : -1;
+        this.prayerNumber = extras != null ? extras.getInt("Id") : -1;
         if (extras != null) {
             i = extras.getInt("parentId");
         } else {
             i = -1;
         }
         this.parentId = i;
-        if (this.f2Id != -1) {
+        if (this.prayerNumber != -1) {
             this.Progress = ProgressDialog.show(this, "", getResources().getString(R.string.wait), true);
             new loadPrayer().execute(new String[]{""});
         }
@@ -115,18 +115,18 @@ public class PrayerActivity extends Activity {
 
         private String getSelectin() {
             if (PrayerActivity.this.parentId == 0) {
-                String SelectIn = PrayerActivity.PRAYERS[PrayerActivity.this.f2Id];
-                PrayerActivity.this.prayerHeaderText = PrayerActivity.this.getResources().getStringArray(R.array.prayers_array)[PrayerActivity.this.f2Id];
+                String SelectIn = PrayerActivity.PRAYERS[PrayerActivity.this.prayerNumber];
+                PrayerActivity.this.prayerHeaderText = PrayerActivity.this.getResources().getStringArray(R.array.prayers_array)[PrayerActivity.this.prayerNumber];
                 return SelectIn;
             } else if (PrayerActivity.this.parentId == 1) {
-                String SelectIn2 = PrayerActivity.MIDNIGHT_PRAYERS[PrayerActivity.this.f2Id];
-                PrayerActivity.this.prayerHeaderText = PrayerActivity.this.getResources().getStringArray(R.array.midnight_prayers_array)[PrayerActivity.this.f2Id];
+                String SelectIn2 = PrayerActivity.MIDNIGHT_PRAYERS[PrayerActivity.this.prayerNumber];
+                PrayerActivity.this.prayerHeaderText = PrayerActivity.this.getResources().getStringArray(R.array.midnight_prayers_array)[PrayerActivity.this.prayerNumber];
                 return SelectIn2;
             } else if (PrayerActivity.this.parentId != 2) {
                 return "";
             } else {
-                String SelectIn3 = PrayerActivity.OTHER_PRAYERS[PrayerActivity.this.f2Id];
-                PrayerActivity.this.prayerHeaderText = PrayerActivity.this.getResources().getStringArray(R.array.other_prayers_array)[PrayerActivity.this.f2Id];
+                String SelectIn3 = PrayerActivity.OTHER_PRAYERS[PrayerActivity.this.prayerNumber];
+                PrayerActivity.this.prayerHeaderText = PrayerActivity.this.getResources().getStringArray(R.array.other_prayers_array)[PrayerActivity.this.prayerNumber];
                 return SelectIn3;
             }
         }
