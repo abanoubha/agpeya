@@ -227,7 +227,7 @@ public class DragableSpace extends ViewGroup {
             this.currentScreen = -1;
         }
 
-        /* synthetic */ SavedState(Parcel parcel, SavedState savedState) {
+        SavedState(Parcel parcel, SavedState savedState) {
             this(parcel);
         }
 
