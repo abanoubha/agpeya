@@ -21,7 +21,7 @@ public class PrayerActivity extends Activity {
     private int prayerNumber;
     public ProgressDialog Progress;
     private final int contentColor = -16777216;
-    private final int contentSize = 18;
+    private final int contentSize = 20;//18
     public int currentScreen = -1;
     private final String currentKey = "currentScreen";
     private int parentId;
@@ -29,7 +29,7 @@ public class PrayerActivity extends Activity {
     private String prayerHeaderText;
     private DragableSpace space;
     private int titleColor;
-    private final int titleSize = 20;
+    private final int titleSize = 22;//20
     public List<String> titles;
 
     protected void onCreate(Bundle savedInstanceState) {
