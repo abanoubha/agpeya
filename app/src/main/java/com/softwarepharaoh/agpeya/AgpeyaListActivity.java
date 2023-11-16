@@ -5,7 +5,6 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.os.Bundle;
 
 import android.content.Intent;
-import android.graphics.Typeface;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -17,7 +16,6 @@ import android.widget.TextView;
 
 public class AgpeyaListActivity extends AppCompatActivity {
 
-    public Typeface droid;
     private ExpandableListView expandableList;
 
     public class ListAdapter extends BaseExpandableListAdapter {
@@ -52,7 +50,6 @@ public class AgpeyaListActivity extends AppCompatActivity {
             TextView textView = (TextView) ((LayoutInflater) AgpeyaListActivity.this.getSystemService(LAYOUT_INFLATER_SERVICE)).inflate(R.layout.prayer_row, null).findViewById(R.id.prayer);
             textView.setGravity(5);
             textView.setText(getChild(groupPosition, childPosition).toString());
-            textView.setTypeface(AgpeyaListActivity.this.droid);
             return textView;
         }
 
@@ -71,7 +68,6 @@ public class AgpeyaListActivity extends AppCompatActivity {
         public View getGroupView(int groupPosition, boolean isExpanded, View convertView, ViewGroup parent) {
             TextView textView = (TextView) ((LayoutInflater) AgpeyaListActivity.this.getSystemService(LAYOUT_INFLATER_SERVICE)).inflate(R.layout.prayer_row, null).findViewById(R.id.prayer);
             textView.setText(getGroup(groupPosition).toString());
-            textView.setTypeface(AgpeyaListActivity.this.droid);
             return textView;
         }
 
@@ -88,8 +84,6 @@ public class AgpeyaListActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_agpeya_list);
-
-        this.droid = Typeface.createFromAsset(getAssets(), "DroidNaskh-Bold.ttf");
 
         this.expandableList = findViewById(R.id.expandableList);
         this.expandableList.setAdapter(new ListAdapter());

@@ -4,7 +4,6 @@ import android.app.Activity;
 import android.app.ProgressDialog;
 import android.database.Cursor;
 import android.graphics.Color;
-import android.graphics.Typeface;
 import android.os.AsyncTask;
 import android.os.Bundle;
 import android.widget.LinearLayout;
@@ -25,7 +24,6 @@ public class PrayerActivity extends Activity {
     private final int contentSize = 18;
     public int currentScreen = -1;
     private final String currentKey = "currentScreen";
-    public Typeface droid;
     private int parentId;
     public Cursor pray;
     private String prayerHeaderText;
@@ -39,7 +37,6 @@ public class PrayerActivity extends Activity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.please_wait);
         this.space = new DragableSpace(getApplicationContext());
-        this.droid = Typeface.createFromAsset(getAssets(), "DroidNaskh-Bold.ttf");
 
         //this.titleSize = 20;
         //this.contentSize = 18;
@@ -82,7 +79,6 @@ public class PrayerActivity extends Activity {
                     if (PrayerActivity.this.pray.getString(1).length() != 0) {
                         TextView title = new TextView(PrayerActivity.this);
                         title.setText(PrayerActivity.this.pray.getString(1));
-                        title.setTypeface(PrayerActivity.this.droid);
                         title.setPadding(10, 10, 10, 10);
                         title.setTextSize(2, (float) PrayerActivity.this.titleSize);
                         title.setTextColor(PrayerActivity.this.titleColor);
@@ -91,7 +87,6 @@ public class PrayerActivity extends Activity {
                         linearLayout.addView(title);
                         TextView content = new TextView(PrayerActivity.this);
                         content.setText(unescape(PrayerActivity.this.pray.getString(2)));
-                        content.setTypeface(PrayerActivity.this.droid);
                         content.setPadding(10, 10, 15, 10);
                         content.setTextSize(2, (float) PrayerActivity.this.contentSize);
                         content.setTextColor(PrayerActivity.this.contentColor);
@@ -100,7 +95,6 @@ public class PrayerActivity extends Activity {
                     } else {
                         TextView content2 = new TextView(PrayerActivity.this);
                         content2.setText(unescape(PrayerActivity.this.pray.getString(2)));
-                        content2.setTypeface(PrayerActivity.this.droid);
                         content2.setTextSize(2, (float) PrayerActivity.this.titleSize);
                         content2.setPadding(10, 140, 10, 10);
                         content2.setTextColor(PrayerActivity.this.titleColor);
