@@ -15,6 +15,7 @@
 - [x] support Android 11
 - [x] support Android 12
 - [x] support latest Android SDK (33) : v1.1.0
+- [x] removed obsolete & not needed anymore assets
 - [ ] preferences : text/font size
 - [ ] preferences : text/font color
 - [ ] feature : go to 'page x' directly inside a prayer
