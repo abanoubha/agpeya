@@ -10,7 +10,6 @@
  - support Android 5.1 to Android 13 (latest)
  - lightweight : ~1.5 MB
 
-
 ## ToDo or Done
 - [x] support Android 10
 - [x] support Android 11
