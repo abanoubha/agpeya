@@ -8,7 +8,7 @@
  # Features
  - easy to use and navigate
  - support Android 5.1 to Android 14 (latest)
- - lightweight : ~1.5 MB
+ - lightweight : ~1.3 MB
 
 ## Tasks & Milestones
 - [x] support Android 10
