@@ -7,7 +7,7 @@
 
  # Features
  - easy to use and navigate
- - support Android 5.1 to Android 13 (latest)
+ - support Android 5.1 to Android 14 (latest)
  - lightweight : ~1.5 MB
 
 ## ToDo or Done
