@@ -16,7 +16,7 @@
 - [x] support Android 12
 - [x] support Android 13
 - [x] support ~~latest~~ Android SDK (33) : v1.1.0
-- [x] support latest Android SDK (34) : v1.4.0
+- [x] support latest Android SDK (34) : [v1.4.0](https://github.com/abanoubha/agpeya/releases/tag/1.4.0)
 - [x] removed obsolete & not needed anymore assets
 - [x] upgrade to support Android 14 ([sdk 34](https://github.com/abanoubha/agpeya/commit/757da425d72f880a458be715a76909156fe3807e))
 - [ ] preferences : text/font size
