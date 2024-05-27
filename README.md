@@ -10,13 +10,15 @@
  - support Android 5.1 to Android 14 (latest)
  - lightweight : ~1.5 MB
 
-## ToDo or Done
+## Tasks & Milestones
 - [x] support Android 10
 - [x] support Android 11
 - [x] support Android 12
-- [x] support latest Android SDK (33) : v1.1.0
+- [x] support Android 13
+- [x] support ~~latest~~ Android SDK (33) : v1.1.0
+- [x] support latest Android SDK (34) : v1.4.0
 - [x] removed obsolete & not needed anymore assets
-- [ ] upgrade to support Android 14
+- [x] upgrade to support Android 14 ([sdk 34](https://github.com/abanoubha/agpeya/commit/757da425d72f880a458be715a76909156fe3807e))
 - [ ] preferences : text/font size
 - [ ] preferences : text/font color
 - [ ] feature : go to 'page x' directly inside a prayer
