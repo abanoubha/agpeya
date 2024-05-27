@@ -56,11 +56,7 @@ public class DragableSpace extends ViewGroup {
                 break;
             case 2:
                 int xDiff = (int) Math.abs(x - this.mLastMotionX);
-                if (((int) Math.abs(y - this.lastMotionY)) < allowedDistance) {
-                    yMoved = true;
-                } else {
-                    yMoved = false;
-                }
+                yMoved = ((int) Math.abs(y - this.lastMotionY)) < allowedDistance;
                 if (xDiff > this.mTouchSlop) {
                     xMoved = true;
                 } else {
