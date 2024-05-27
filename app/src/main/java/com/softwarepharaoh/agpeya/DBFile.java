@@ -49,14 +49,7 @@ public class DBFile {
         boolean exists = f.exists();
         boolean canRead = f.canRead();
         if (!exists || !canRead) {
-            if (!exists || !canRead) {
-                return false;
-            }
-            return true;
-        } else if (((long) this.myContext.getAssets().open(DB_NAME, 0).available()) - f.length() < 500) {
-            return true;
-        } else {
             return false;
-        }
+        } else return ((long) this.myContext.getAssets().open(DB_NAME, 0).available()) - f.length() < 500;
     }
 }
