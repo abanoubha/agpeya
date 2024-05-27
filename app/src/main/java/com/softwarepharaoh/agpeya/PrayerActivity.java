@@ -186,7 +186,7 @@ public class PrayerActivity extends Activity {
 //        return super.onContextItemSelected(item);
 //    }
 
-    protected void onSaveInstanceState(Bundle icicle) {
+    protected void onSaveInstanceState(@NonNull Bundle icicle) {
         if (this.space.getCurrentScreen() != 0) {
             icicle.putInt(this.currentKey, this.space.getCurrentScreen());
         }
