@@ -63,10 +63,7 @@ public class DragableSpace extends ViewGroup {
                     break;
                 }
         }
-        if (this.mTouchState == 0) {
-            return false;
-        }
-        return true;
+        return this.mTouchState != 0;
     }
 
     public boolean onTouchEvent(MotionEvent event) {
