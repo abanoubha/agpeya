@@ -11,14 +11,16 @@
  - lightweight : ~1.3 MB
 
 ## Tasks & Milestones
+- [x] support Android 5.1
+- [x] support Android 6
+- [x] support Android 7
+- [x] support Android 8
+- [x] support Android 9
 - [x] support Android 10
 - [x] support Android 11
 - [x] support Android 12
-- [x] support Android 13
-- [x] support ~~latest~~ Android SDK (33) : v1.1.0
-- [x] support latest Android SDK (34) : [v1.4.0](https://github.com/abanoubha/agpeya/releases/tag/1.4.0)
-- [x] removed obsolete & not needed anymore assets
-- [x] upgrade to support Android 14 ([sdk 34](https://github.com/abanoubha/agpeya/commit/757da425d72f880a458be715a76909156fe3807e))
+- [x] support Android 13 (SDK 33) on [v1.1.0](https://github.com/abanoubha/agpeya/releases/tag/1.1.0)
+- [x] upgrade to support Android 14 ([SDK 34](https://github.com/abanoubha/agpeya/commit/757da425d72f880a458be715a76909156fe3807e)) on [v1.4.0](https://github.com/abanoubha/agpeya/releases/tag/1.4.0)
 - [ ] preferences : text/font size
 - [ ] preferences : text/font color
 - [ ] feature : go to 'page x' directly inside a prayer
