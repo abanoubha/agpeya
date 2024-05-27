@@ -3,7 +3,7 @@
 
  Download Agpeya app from [Google Play](https://play.google.com/store/apps/details?id=com.softwarepharaoh.agpeya).
 
- You can see our updates ans suggestions on [telegram](https://t.me/abanoubchan) or [facebook](https://facebook.com/AbanoubHannaDotCom).
+ You can see our updates and suggestions on [telegram](https://t.me/abanoubchan) or [facebook](https://facebook.com/AbanoubHannaDotCom).
 
  # Features
  - easy to use and navigate
