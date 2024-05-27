@@ -141,11 +141,11 @@ public class PrayerActivity extends Activity {
             int toScreen;
             super.onPostExecute(result);
             PrayerActivity.this.setTitle(PrayerActivity.this.prayerHeaderText);
-            int childsTotal = PrayerActivity.this.space.getChildCount() - 1;
+            int childrenCount = PrayerActivity.this.space.getChildCount() - 1;
             if (PrayerActivity.this.currentScreen != -1) {
                 toScreen = PrayerActivity.this.currentScreen;
             } else {
-                toScreen = childsTotal;
+                toScreen = childrenCount;
             }
             PrayerActivity.this.space.setCurrentScreen(toScreen);
             PrayerActivity.this.setContentView(PrayerActivity.this.space);
