@@ -9,10 +9,15 @@
 
 I created the app to be available to all people who need it, all the time, everywhere. I'd like to create a developer community to maintain the app indefinitely.
 
- # Features
- - easy to use and navigate
- - support Android 5.1 to Android 14 (latest)
- - lightweight : ~1.3 MB
+## My vision for Agpeya app
+
+I want to let the app be available to everyone, everywhere, with no barriers nor struggles.
+
+So, the app must...
+
+- be easy to use and navigate
+- be availabe to almost all Android smartphones; support Android 5.1 (2014) up to Android 14 (2023, latest)
+- use less disk space; app size is ~1.3 MB
 
 ## Roadmap | timeline of release versions with tasks
 
