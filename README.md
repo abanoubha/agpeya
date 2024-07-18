@@ -5,6 +5,10 @@
 
  You can see our updates and suggestions on [telegram](https://t.me/abanoubchan) or [facebook](https://facebook.com/AbanoubHannaDotCom).
 
+## Why opensource ?
+
+I created the app to be available to all people who need it, all the time, everywhere. I'd like to create a developer community to maintain the app indefinitely.
+
  # Features
  - easy to use and navigate
  - support Android 5.1 to Android 14 (latest)
