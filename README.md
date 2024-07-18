@@ -14,23 +14,34 @@ I created the app to be available to all people who need it, all the time, every
  - support Android 5.1 to Android 14 (latest)
  - lightweight : ~1.3 MB
 
-## Tasks & Milestones
-- [x] support Android 5.1
-- [x] support Android 6
-- [x] support Android 7
-- [x] support Android 8
-- [x] support Android 9
-- [x] support Android 10
-- [x] support Android 11
-- [x] support Android 12
-- [x] support Android 13 (SDK 33) on [v1.1.0](https://github.com/abanoubha/agpeya/releases/tag/1.1.0)
-- [x] upgrade to support Android 14 ([SDK 34](https://github.com/abanoubha/agpeya/commit/757da425d72f880a458be715a76909156fe3807e)) on [v1.4.0](https://github.com/abanoubha/agpeya/releases/tag/1.4.0)
-- [ ] preferences : text/font size
-- [ ] preferences : text/font color
-- [ ] feature : go to 'page x' directly inside a prayer
-- [ ] reader : listen to a prayer (accessibility option)
-- [ ] dark mode
-- [ ] notification of the prayer : choose time or default time
+## Roadmap | timeline of release versions with tasks
+
+- [v1.0.0](https://github.com/abanoubha/agpeya/releases/tag/v1.0)
+  - support Android 5.1
+  - support Android 6
+  - support Android 7
+  - support Android 8
+  - support Android 9
+  - support Android 10
+  - support Android 11
+  - support Android 12
+- [v1.1.0](https://github.com/abanoubha/agpeya/releases/tag/1.1.0)
+  - support Android 13 (SDK 33)
+- [v1.2.0](https://github.com/abanoubha/agpeya/releases/tag/1.2.0)
+  - use higher resolution logo/icon
+- [v1.3.0](https://github.com/abanoubha/agpeya/releases/tag/1.3.0)
+  - performance optimization
+- [v1.3.1](https://github.com/abanoubha/agpeya/releases/tag/1.3.1)
+  - remove obsolete data & code to optimize app size
+- [v1.4.0](https://github.com/abanoubha/agpeya/releases/tag/1.4.0)
+  - upgrade SDK to support Android 14
+- Next Version
+  - preferences : text/font size
+  - preferences : text/font color
+  - feature : go to 'page x' directly inside a prayer
+  - reader : listen to a prayer (accessibility option)
+  - dark mode
+  - notification of the prayer : choose time or default time
 
 ## Improvement
 
