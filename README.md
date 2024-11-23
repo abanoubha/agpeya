@@ -10,6 +10,8 @@ You can see our updates and suggestions on [telegram](https://t.me/abanoubchan) 
 
 I created the app to be available to all people who need it, all the time, everywhere. I'd like to create a developer community to maintain the app indefinitely.
 
+The codebase is available on [Github](https://github.com/abanoubha/agpeya), [GitLab](https://gitlab.com/abanoubha/agpeya), and [CodeBerg](https://codeberg.org/abanoubha/agpeya).
+
 ## My vision for Agpeya app
 
 I want to let the app be available to everyone, everywhere, with no barriers nor struggles.
