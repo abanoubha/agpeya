@@ -1,9 +1,10 @@
 # agpeya
- Agpeya: Prayer Book of Hours.
 
- Download Agpeya app from [Google Play](https://play.google.com/store/apps/details?id=com.softwarepharaoh.agpeya).
+Agpeya: Prayer Book of Hours.
 
- You can see our updates and suggestions on [telegram](https://t.me/abanoubchan) or [facebook](https://facebook.com/AbanoubHannaDotCom).
+Download Agpeya app from [Google Play](https://play.google.com/store/apps/details?id=com.softwarepharaoh.agpeya).
+
+You can see our updates and suggestions on [telegram](https://t.me/abanoubchan) or [facebook](https://facebook.com/AbanoubHannaDotCom).
 
 ## Why opensource ?
 
@@ -40,13 +41,16 @@ So, the app must...
   - remove obsolete data & code to optimize app size
 - [v1.4.0](https://github.com/abanoubha/agpeya/releases/tag/1.4.0)
   - upgrade SDK to support Android 14
-- Next Version
+- v2.0.0
+  - migrate from Java to Kotlin
+  - migrate from Android XML to Jetpack Compose
   - preferences : text/font size
-  - preferences : text/font color
+  - preferences : text/font color & bg (theme)
   - feature : go to 'page x' directly inside a prayer
-  - reader : listen to a prayer (accessibility option)
-  - dark mode
+  - light/dark mode
   - notification of the prayer : choose time or default time
+- Next Version
+  - reader : listen to a prayer (accessibility option)
 
 ## Improvement
 
