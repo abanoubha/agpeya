@@ -1,5 +1,5 @@
 # agpeya
- Agpeya: Prayer Book of Hours. This app is inspired by [Agpeya by Armia](https://play.google.com/store/apps/details?id=com.coptsonline.agpeya).
+ Agpeya: Prayer Book of Hours.
 
  Download Agpeya app from [Google Play](https://play.google.com/store/apps/details?id=com.softwarepharaoh.agpeya).
 
