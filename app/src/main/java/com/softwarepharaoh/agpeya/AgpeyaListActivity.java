@@ -1,18 +1,18 @@
 package com.softwarepharaoh.agpeya;
 
-import androidx.appcompat.app.AppCompatActivity;
-
-import android.os.Bundle;
-
 import android.content.Intent;
+import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-//import android.widget.AbsListView.LayoutParams;
 import android.widget.BaseExpandableListAdapter;
 import android.widget.ExpandableListView;
 import android.widget.ExpandableListView.OnChildClickListener;
 import android.widget.TextView;
+
+import androidx.appcompat.app.AppCompatActivity;
+
+//import android.widget.AbsListView.LayoutParams;
 
 public class AgpeyaListActivity extends AppCompatActivity {
 
@@ -47,7 +47,13 @@ public class AgpeyaListActivity extends AppCompatActivity {
 //        }
 
         public View getChildView(int groupPosition, int childPosition, boolean isLastChild, View convertView, ViewGroup parent) {
-            TextView textView = (TextView) ((LayoutInflater) AgpeyaListActivity.this.getSystemService(LAYOUT_INFLATER_SERVICE)).inflate(R.layout.prayer_row, null).findViewById(R.id.prayer);
+            TextView textView;
+            if (convertView == null) {
+                LayoutInflater inflater = (LayoutInflater) AgpeyaListActivity.this.getSystemService(LAYOUT_INFLATER_SERVICE);
+                textView = (TextView) inflater.inflate(R.layout.prayer_row, parent, false);
+            } else {
+                textView = (TextView) convertView;
+            }
             textView.setGravity(5);
             textView.setText(getChild(groupPosition, childPosition).toString());
             return textView;
